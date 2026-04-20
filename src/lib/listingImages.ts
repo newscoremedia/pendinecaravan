@@ -4,10 +4,15 @@ type GalleryImage = {
 }
 
 // Vite bundles any images placed in ../assets/photos/
-const modules = import.meta.glob('../assets/photos/*.{png,jpg,jpeg,webp,avif}', {
+// Include uppercase extensions too (Linux builds are case-sensitive).
+const modules = import.meta.glob(
+  '../assets/photos/*.{png,PNG,jpg,JPG,jpeg,JPEG,webp,WEBP,avif,AVIF}',
+  {
   eager: true,
-  as: 'url',
-})
+  query: '?url',
+  import: 'default',
+  }
+)
 
 export function getListingImages(): GalleryImage[] {
   return Object.entries(modules)
