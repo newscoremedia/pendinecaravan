@@ -286,13 +286,13 @@ function HomePage() {
 
                 <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                   <a
-                    className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white hover:bg-slate-800"
+                    className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white hover:bg-indigo-500"
                     href="#enquire"
                   >
-                    Get availability & viewing
+                    Make enquiry
                   </a>
                   <a
-                    className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:bg-slate-50"
+                    className="inline-flex items-center justify-center rounded-xl bg-emerald-500 px-4 py-3 text-sm font-semibold text-white hover:bg-emerald-400"
                     href={whatsappHref}
                     target="_blank"
                     rel="noreferrer"
