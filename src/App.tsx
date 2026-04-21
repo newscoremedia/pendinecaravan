@@ -53,7 +53,7 @@ function HomePage() {
   const [submitted, setSubmitted] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
 
-  const price = useMemo(() => formatGbp(LISTING.priceGbp), [])
+  const price = useMemo(() => `${formatGbp(LISTING.priceGbp)} O.N.O.`, [])
   const images = useMemo(() => getListingImages(), [])
   const heroImage = images[0]
   const floorplanImage = images.find((img) => /floor\s*plan/i.test(img.alt))
